@@ -8,27 +8,20 @@
 
 #import "GameScene.h"
 #include <stdlib.h>
+#include "LearningGrid.h"
 
 @implementation GameScene
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
-    myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
+    float size = (self.frame.size.width < self.frame.size.height) ? self.frame.size.width : self.frame.size.height;
     
-    [self addChild:myLabel];
+    LearningGrid *lg = [[LearningGrid alloc] initWithSize: size * 0.9];
     
-    SKShapeNode *shape = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.frame.size.width/2, self.frame.size.height/2)];
-    shape.position = CGPointMake(CGRectGetMidX(self.frame),
+    lg.position = CGPointMake(CGRectGetMidX(self.frame),
                                  CGRectGetMidY(self.frame));
-    shape.strokeColor = [SKColor blueColor];
-    shape.lineWidth = 3;
-    
-    [self addChild:shape];
+    [self addChild:lg];
 }
 
 -(void)mouseDown:(NSEvent *)theEvent {

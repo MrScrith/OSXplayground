@@ -14,6 +14,8 @@
 		8243556A1B574C37006140EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824355691B574C37006140EF /* Images.xcassets */; };
 		8243556D1B574C37006140EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8243556B1B574C37006140EF /* MainMenu.xib */; };
 		824355791B574C37006140EF /* learningApp1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824355781B574C37006140EF /* learningApp1Tests.m */; };
+		824355831B589383006140EF /* LearningGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 824355821B589383006140EF /* LearningGrid.m */; };
+		824355871B58AC06006140EF /* LearningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824355861B58AC06006140EF /* LearningCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		824355721B574C37006140EF /* learningApp1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningApp1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		824355771B574C37006140EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824355781B574C37006140EF /* learningApp1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learningApp1Tests.m; sourceTree = "<group>"; };
+		824355821B589383006140EF /* LearningGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningGrid.m; sourceTree = "<group>"; };
+		824355841B5893A3006140EF /* LearningGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningGrid.h; sourceTree = "<group>"; };
+		824355851B58ABF6006140EF /* LearningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningCell.h; sourceTree = "<group>"; };
+		824355861B58AC06006140EF /* LearningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				824355691B574C37006140EF /* Images.xcassets */,
 				8243556B1B574C37006140EF /* MainMenu.xib */,
 				8243555D1B574C37006140EF /* Supporting Files */,
+				824355821B589383006140EF /* LearningGrid.m */,
+				824355841B5893A3006140EF /* LearningGrid.h */,
+				824355851B58ABF6006140EF /* LearningCell.h */,
+				824355861B58AC06006140EF /* LearningCell.m */,
 			);
 			path = learningApp1;
 			sourceTree = "<group>";
@@ -221,7 +231,9 @@
 			files = (
 				824355631B574C37006140EF /* main.m in Sources */,
 				824355661B574C37006140EF /* GameScene.m in Sources */,
+				824355871B58AC06006140EF /* LearningCell.m in Sources */,
 				824355611B574C37006140EF /* AppDelegate.m in Sources */,
+				824355831B589383006140EF /* LearningGrid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
